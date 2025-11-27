@@ -1,7 +1,20 @@
-// Step 1: Initialize three variables for the sides of the triangle
+// Step 1: Initialize three variables
+// Equilateral Triangle
+let side1 = 6;
+let side2 = 6;
+let side3 = 6;
+
+/* Isosceles Triangle
+let side1 = 6;
+let side2 = 8;
+let side3 = 6;
+*/
+
+/* Scalene Triangle
 let side1 = 5;
-let side2 = 5;
-let side3 = 5;
+let side2 = 6;
+let side3 = 7;
+*/
 
 // Step 2: Check if all sides are equal (Equilateral triangle)
 if (side1 === side2 && side2 === side3) {
