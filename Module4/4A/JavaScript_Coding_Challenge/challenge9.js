@@ -1,15 +1,19 @@
-function removeDuplicates(arr) {
-    let unique = [];
+// Challenge 10: Count vowels in a string
 
-    for (let i = 0; i < arr.length; i++) {
-        if (unique.indexOf(arr[i]) === -1) {
-            unique.push(arr[i]);
+function countVowels(str) {
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            count++;
         }
     }
 
-    return unique;
+    return count;
 }
 
-console.log(removeDuplicates([10, 20, 20, 30, 40, 40]));
+// Test
+console.log(countVowels("My name is Qahharat"));  
 
-// Expected: [10, 20, 30, 40]
+// Expected output: 6
