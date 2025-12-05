@@ -1,15 +1,10 @@
-function removeSpaces(str) {
-    let result = "";
+// Challenge 8: Check if a number is divisible by 10
 
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] !== " ") {
-            result += str[i];
-        }
-    }
-
-    return result;
+function isDivisibleBy10(number) {
+    return number % 10 === 0;
 }
 
-console.log(removeSpaces("Remove all spaces"));
-
-// Expected: "Removeallspaces"
+// Tests
+console.log(isDivisibleBy10(50));   // true
+console.log(isDivisibleBy10(23));   // false
+console.log(isDivisibleBy10(100));  // true
