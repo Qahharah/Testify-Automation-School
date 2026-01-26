@@ -15,17 +15,16 @@ public class Task8 {
 
         List<WebElement> inputs = driver.findElements(By.tagName("input"));
 
-        inputs.get(0).sendKeys("Qahharat");                  // First Name
-        inputs.get(1).sendKeys("Ibrahim");                   // Last Name
-        inputs.get(2).sendKeys("qahharat.ibrahim@test.com"); // Email
+        inputs.get(0).sendKeys("Qahharat");
+        inputs.get(1).sendKeys("Ibrahim");
+        inputs.get(2).sendKeys("qahharat.ibrahim@test.com");
 
-        inputs.get(4).click();                               // Female
+        inputs.get(4).click();
 
-        inputs.get(6).sendKeys("Test123");                   // Password
-        inputs.get(7).sendKeys("Test123");                   // Confirm Password
-        inputs.get(8).sendKeys("Testify task 8");            // About
+        inputs.get(6).sendKeys("Test1234");
+        inputs.get(7).sendKeys("Test1234");
+        inputs.get(8).sendKeys("Testify task 8");
 
-        // 🔑 TRIGGER FORM VALIDATION (THIS IS THE KEY)
         driver.findElement(By.tagName("body")).click();
 
         WebElement button = driver.findElement(By.tagName("button"));
