@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Task17 Suite" verbose="1" parallel="false">
+
+    <test name="Task17 Tests">
+        <classes>
+            <class name="Task17.Task17ElementsTest"/>
+            <class name="Task17.Task17FormsTest"/>
+            <class name="Task17.Task17WidgetsTest"/>
+            <class name="Task17.Task17InteractionsTest"/>
+        </classes>
+    </test>
+
+</suite>
