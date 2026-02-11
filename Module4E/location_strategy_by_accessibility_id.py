@@ -17,6 +17,7 @@ def main():
     driver = webdriver.Remote(
         "http://127.0.0.1:4723", options=options
         )
+    
     num3 = driver.find_element(
         AppiumBy.ACCESSIBILITY_ID, "3"
         )
@@ -34,9 +35,6 @@ def main():
 
     num1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, "1")
     num1.click()
-
-
-
 
     time.sleep(5)
     driver.quit()
