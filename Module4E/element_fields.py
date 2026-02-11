@@ -58,7 +58,7 @@ def main():
     print("Is Enabled", createNewContactButton.is_enabled())
     print("Is Selected", createNewContactButton.is_selected())
     print("Is Displayed", createNewContactButton.is_displayed())
-    time.sleep(4)
+    time.sleep(10)
 
 
     driver.quit()
